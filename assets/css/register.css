@@ -73,5 +73,5 @@ button {
 .button-outline {
     background-color: transparent;
     border: 2px solid var(--orange);
-    background-color: var(--orange);
+    color: var(--orange);
 }
