@@ -1,0 +1,77 @@
+.register-image {
+    background-image: url(../images/location.jpg);
+    background-position: center bottom;
+}
+
+/* most of the time you'll want to override the default styles (which is quite a lot of stuff */
+input {
+    border: none;
+    line-height: 1.5;
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+    padding: 0 12px;
+    outline: none;
+    color: #32325d;
+}
+
+input::placeholder {
+    color: #aab7c4;
+}
+
+.bg-orange {
+    /* we overwrite the default tachyons bg-orange class */
+    background-color: #ffe6dd;
+}
+
+.register {
+    /* using css grid to stack the child boxes on top of each other */
+    display: grid;
+    place-items: center;
+    /* chop off the edges of the box when our front element slides out */
+    overflow: hidden;
+}
+
+/* so our boxes stack on top of each other  */
+.front,
+.back {
+    grid-area: 1/1;
+}
+
+/* we addd a transition to the transform property */
+.front {
+    transition: transform 0.5s ease;
+}
+
+/* we toggle this class using JS  */
+.front.slide-up {
+    transform: translateY(-100%);
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--orange);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+/* here we show a pointer cursor so the user knows the can click the button  */
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.button-small {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+.button-outline {
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    background-color: var(--orange);
+}

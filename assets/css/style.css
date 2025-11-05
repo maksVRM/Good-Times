@@ -43,17 +43,6 @@ ul {
     color: var(--orange);
 }
 
-.button {
-    display: inline-block;
-    background-color: var(--orange);
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border: none;
-    padding: 24px 72px;
-    font-family: 'HK-Grotesk-Bold', sans-serif;
-}
-
 .container {
     max-width: 1080px;
     margin-left: auto;
