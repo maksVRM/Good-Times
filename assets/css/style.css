@@ -116,10 +116,24 @@ blockquote {
     padding: 48px 24px;
 }
 
-.schedule-time{
+.schedule-time {
     color: var(--orange);
     font-size: 36px;
     font-family: 'HK-Grotesk-Bold', sans-serif;
     line-height: 1;
     margin-bottom: 8px;
+}
+
+.schedule-day {
+    /* languages like japanese sometimes have a vertical writing style */
+    writing-mode: vertical-rl;
+    /* we can change text orienation to sideways  */
+    text-orientation: sideways;
+    /* then we rotate the text to flip it over  */
+    transform: rotate(180deg);
+    padding: 24px;
+    line-height: 1;
+    text-align: center;
+    background-color: var(--orange);
+    color: var(--white);
 }
