@@ -94,3 +94,32 @@ blockquote {
     color: #979797;
     font-family: 'HK-Grotesk-Regular', sans-serif;
 }
+
+.schedule-container {
+    border: solid 3px var(--orange);
+    /* this gives us natural scrolling behaviour on touch screens */
+    -webkit-overflow-scrolling: touch;
+}
+
+.schedule-container::-webkit-scrollbar {
+    width: 12px;
+    height: 14px;
+    background-color: transparent;
+}
+
+.schedule-container::-webkit-scrollbar-thumb {
+    background-color: var(--orange);
+    border: solid 2px #fff;
+}
+
+.schedule {
+    padding: 48px 24px;
+}
+
+.schedule-time{
+    color: var(--orange);
+    font-size: 36px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    line-height: 1;
+    margin-bottom: 8px;
+}
