@@ -3,8 +3,9 @@
 }
 
 .nav-item {
-    margin-left: auto;
-    margin-right: auto;
+    /* rems are relative units of measurement 1rem is equal to 16px */
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .nav-link {

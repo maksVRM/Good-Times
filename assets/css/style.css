@@ -17,3 +17,39 @@ a {
 ul {
     list-style: none;
 }
+
+.heading {
+    color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    font-size: 110px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+    line-height: 1;
+}
+
+.heading-orange{
+    font-size: 120px;
+    -webkit-text-stroke-color: #ff3c15;
+    margin-bottom: 3rem;
+    color:#ff3c15 ;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff3c15;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    padding: 24px 72px;
+    font-family: 'HK-Grotesk-Bold', sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
