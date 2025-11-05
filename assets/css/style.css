@@ -3,14 +3,16 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: #414141;
+    background-image: url(../images/background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 a {
     text-decoration: none;
     color: #414141;
 }
-
-header
 
 ul {
     list-style: none;
