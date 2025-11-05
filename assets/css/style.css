@@ -1,5 +1,13 @@
+/* we declare our variable inside a :root selector */
+:root {
+    /* give the variable a name and value (needs two -- in front */
+    --orange: #ff3c15;
+    --white: #ffff;
+    --medium-font: 'HK-Grotesk-Medium', sans-serif;
+}
+
 body {
-    font-family: 'HK-Grotesk-Medium', sans-serif;
+    font-family: var(--medium-font);
     font-size: 18px;
     line-height: 1.5;
     color: #414141;
@@ -19,25 +27,25 @@ ul {
 }
 
 .heading {
-    color: white;
+    color: var(--white);
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: var(--white);
     font-size: 110px;
     font-family: 'HK-Grotesk-Bold', sans-serif;
     line-height: 1;
 }
 
-.heading-orange{
+.heading-orange {
     font-size: 120px;
-    -webkit-text-stroke-color: #ff3c15;
+    -webkit-text-stroke-color: var(--orange);
     margin-bottom: 3rem;
-    color:#ff3c15 ;
+    color: var(--orange);
 }
 
 .button {
     display: inline-block;
-    background-color: #ff3c15;
+    background-color: var(--orange);
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -46,10 +54,43 @@ ul {
     font-family: 'HK-Grotesk-Bold', sans-serif;
 }
 
-.container{
+.container {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+blockquote {
+    color: var(--orange);
+    font-size: 36px;
+}
+
+.cite {
+    display: inline-block;
+    color: var(--orange);
+    line-height: 1;
+    padding: 22px 18px;
+    border-radius: 100%;
+    border: 3px solid var(--orange);
+    text-transform: uppercase;
+    margin: 12px 40px;
+
+}
+
+.speaker-image {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.speaker-name,
+.speaker-title {
+    margin: 0;
+    line-height: 1.33;
+}
+
+.speaker-title {
+    color: #979797;
+    font-family: 'HK-Grotesk-Regular', sans-serif;
 }
