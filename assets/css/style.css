@@ -128,21 +128,21 @@ blockquote {
 }
 
 
-footer{
+footer {
     background-color: #222;
 }
 
-.footer-link{
+.footer-link {
     width: 131px;
     height: 40px;
     background-image: url(../images/logo.svg);
 }
 
-.fade{
+.fade {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-.visible{
+.visible {
     opacity: 1;
 }
