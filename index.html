@@ -226,6 +226,7 @@
                         id="payment-form">
                         <div class="spinner"></div>
                         <h3 class='mt0 mb2 form-title'>Your details</h3>
+                        <div id="form-messages" class="mb2"></div>
                         <div class='form-fields'>
                             <input name="name" class="mb2 db" placeholder="Name" id="name">
                             <input name="email" class="mb2 db" placeholder="Email" id="email">
@@ -264,6 +265,10 @@
         </div>
     </footer>
 
+    <!-- here we include stripe on our page  -->
+    <script src="https://js.stripe.com/clover/stripe.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+<!-- <script src="my-node-bakcend/server.js"></script> -->
     <script src="assets/js/tilt.js"></script>
     <script src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
     <script src="assets/js/main.js"></script>

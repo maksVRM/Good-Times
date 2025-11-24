@@ -3,7 +3,7 @@
     background-position: center bottom;
 }
 
-/* most of the time you'll want to override the default styles (which is quite a lot of stuff */
+/* most of the time you'll want to override the default styles (which is quite a lot of stuff) */
 input {
     border: none;
     line-height: 1.5;
@@ -74,4 +74,20 @@ button {
     background-color: transparent;
     border: 2px solid var(--orange);
     color: var(--orange);
+}
+
+.StripeElement {
+    background-color: white;
+    padding: 12px;
+}
+
+/* here we lock the form when it's submitting */
+.form-fields {
+    transition: opacity 0.5s ease;
+}
+
+.processing .form-fields {
+    opacity: 0.5;
+    /* disable interaction with the formn when it's submitting */
+    pointer-events: none;
 }
